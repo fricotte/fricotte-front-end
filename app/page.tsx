@@ -6,7 +6,10 @@ import Footer from "@/components/common/Footer";
 
 export default async function Notes() {
   const supabase = createClient();
-  const { data: notes } = await supabase.from("products").select();
+  const { data: notes } = await supabase
+    .from("products")
+    .select()
+    .eq("isPromoted", true);
 
   function getPicturePath(pictureId: string) {
     return "https://lh3.googleusercontent.com/d/" + pictureId;
