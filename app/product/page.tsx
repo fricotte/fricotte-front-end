@@ -1,8 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
-import { createClient } from "@/utils/supabase/server";
-const supabase = createClient();
+// import { createClient } from "@/utils/supabase/server";
+// const supabase = createClient();
 
 const Product = (props: any) => {
   const searchParams = useSearchParams();
