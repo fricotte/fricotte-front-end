@@ -1,4 +1,3 @@
-import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import Header from "@/components/common/Header";
 
@@ -18,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={GeistSans.className}>
+    <html lang="en" suppressHydrationWarning>
       <body className=" text-foreground bg-gray-100">
         <main className="min-h-screen flex flex-col items-center">
           <Header />

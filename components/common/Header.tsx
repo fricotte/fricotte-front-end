@@ -23,14 +23,10 @@ const Header = () => {
             <RiMenuFill color="black" size={25} onClick={toggleDrawer} />
           </div>
           <div className="flex w-1/3 justify-center">
-            <Image
+            <img
               src="/Assets/logo.png"
               alt="Description de l'image"
-              layout="fit"
-              width={150}
-              height={150}
-              objectFit="cover"
-              className="" // Déplacez l'image vers le haut
+              className="w-[150px] h-auto" // Déplacez l'image vers le haut
             />
           </div>
           <div className="flex w-1/3 justify-end">
@@ -45,14 +41,9 @@ const Header = () => {
           <a href="#" className="text-black ">
             Produits
           </a>
-          <Image
+          <img
             src="/Assets/logo.png"
-            alt="Description de l'image"
-            layout="fit"
-            width={150}
-            height={150}
-            objectFit="cover"
-            className="" // Déplacez l'image vers le haut
+            className="w-[150px] h-auto" // Déplacez l'image vers le haut
           />
           <a href="#" className="text-black ">
             Blog
@@ -69,58 +60,3 @@ const Header = () => {
 };
 
 export default Header;
-
-//   return (
-//     <div>
-//       {size === "xs" || size === "sm" || size === "md" ? (
-//         <div className="flex w-full  h-24 flex-row items-center px-4">
-//           <div className="flex w-1/3 justify-start ">
-//             <RiMenuFill color="black" size={25} onClick={toggleDrawer} />
-//           </div>
-//           <div className="flex w-1/3 justify-center">
-//             <Image
-//               src="/Assets/logo.png"
-//               alt="Description de l'image"
-//               layout="fit"
-//               width={150}
-//               height={150}
-//               objectFit="cover"
-//               className="" // Déplacez l'image vers le haut
-//             />
-//           </div>
-//           <div className="flex w-1/3 justify-end">
-//             <IoIosCart color="black" size={25} />
-//           </div>
-//         </div>
-//       ) : (
-//         <p>Veuillez vous connecter pour continuer.</p>
-//       )}
-
-//       <Drawer isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
-//     </div>
-//   );
-// };
-
-// export default Header;
-
-{
-  /* <div className="flex w-full  h-24 flex-row items-center px-4">
-        <div className="flex w-1/3 justify-start ">
-          <RiMenuFill color="black" size={25} onClick={toggleDrawer} />
-        </div>
-        <div className="flex w-1/3 justify-center">
-          <Image
-            src="/Assets/logo.png"
-            alt="Description de l'image"
-            layout="fit"
-            width={150}
-            height={150}
-            objectFit="cover"
-            className="" // Déplacez l'image vers le haut
-          />
-        </div>
-        <div className="flex w-1/3 justify-end">
-          <IoIosCart color="black" size={25} />
-        </div>
-      </div> */
-}
