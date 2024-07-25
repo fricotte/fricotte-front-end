@@ -6,10 +6,10 @@ import Footer from "@/components/common/Footer";
 
 export default async function Notes() {
   const supabase = createClient();
-  const { data: notes } = await supabase
+  const { data: products } = await supabase
     .from("products")
     .select()
-    .eq("isPromoted", true);
+    .eq("is_promoted", true);
 
   function getPicturePath(pictureId: string) {
     return "https://lh3.googleusercontent.com/d/" + pictureId;
@@ -20,12 +20,12 @@ export default async function Notes() {
       <Hero />
       <Banner />
       <div className="grid w-full px-5 grid-cols-2 gap-3 mb-3">
-        {notes?.map((note, index) => (
+        {products?.map((product, index) => (
           <Card
-            title={note.name}
-            price={note.price}
-            picturePath={getPicturePath(note.pictures)}
-            onClick={() => {}}
+            id={product.id}
+            title={product.name}
+            price={product.price}
+            picturePath={getPicturePath(product.pictures)}
           />
         ))}
       </div>

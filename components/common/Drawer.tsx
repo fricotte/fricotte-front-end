@@ -43,31 +43,14 @@ export default function Drawer(props: any) {
             Produits
           </a>
           <a href="#" className="text-black ">
-            Mon Panier
-          </a>
-          <a href="#" className="text-black ">
             Sur mesure
           </a>
           <a href="#" className="text-black ">
             Blog
           </a>
-          <a href="#" className="text-black ">
-            Plan du site
-          </a>
-          <a href="#" className="text-black ">
-            À propos
-          </a>
-          <a href="#" className="text-black ">
-            Contact
-          </a>
+
           <a href="#" className="text-black ">
             FAQ
-          </a>
-          <a href="#" className="text-black ">
-            Conseils d'entretien
-          </a>
-          <a href="#" className="text-black ">
-            Politique de confidentialité
           </a>
         </div>
       </div>

@@ -17,7 +17,7 @@ const Footer = () => {
           <FaFacebook size={25} />
           <FaWhatsapp size={25} />
         </div>
-        <p className="text-sm">© 2024, FRICOTTE - Powered by Shopify</p>
+        <p className="text-sm">© 2024, FRICOTTE</p>
       </div>
     </>
   );
